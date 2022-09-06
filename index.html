@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
     <title>Leandro Fernandez | Inicio</title>
   </head>
   <body>
     <!-- Inicio: Logo + Navegacion -->
     <header>
       <a href="./index.html">
-        <img src="./assets/img/logo.png" alt="Logo" class="logo"/>
-      </a>      
-      <nav>       
+        <img src="./assets/img/logo.png" alt="Logo" class="logo" />
+      </a>
+      <nav>
         <ul class="navlist">
           <li><a href="./index.html" class="activo">Inicio</a></li>
           <li><a href="./views/sobre-mi.html">Sobre Mi</a></li>
@@ -30,8 +31,12 @@
     <main id="inicio" class="inicio contenedor">
       <section>
         <article class="presentacion">
-          <h1 class="presentacion__title">Leandro Fernandez</h1>
-          <h2 class="presentacion__subtitle">Desarrollador Web y Estudiante.</h2>
+          <h1 class="presentacion__title animate__animated animate__fadeInDown">
+            Leandro Fernandez
+          </h1>
+          <h2 class="presentacion__subtitle animate__animated animate__fadeInDown animate__delay-1s">
+            Desarrollador Web y Estudiante.
+          </h2>
         </article>
       </section>
     </main>
@@ -54,5 +59,11 @@
       </div>
     </footer>
     <!-- Fin: Footer Copyright + Redes Sociales  -->
+    <!-- Inicio: Script -->
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- Fin: Script -->
   </body>
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animate.css">
     <title>Leandro Fernandez | Proyectos</title>
   </head>
   <body>
@@ -33,7 +34,7 @@
         <hr>
       </div>
       <section class="proyectos">
-        <article class="proyecto">
+        <article class="proyecto wow animate__animated animate__fadeIn">
           <div class="proyecto__imagen">
             <img src="../assets/img/perezcontadores.png" alt="Estudio Contable"/>
             <div>
@@ -53,7 +54,7 @@
             </p>
           </div>
         </article>
-        <article class="proyecto reverse">
+        <article class="proyecto reverse wow animate__animated animate__fadeIn">
           <div class="proyecto__imagen">
             <img src="../assets/img/restaurant.png" alt="Restaurante" />
             <div>
@@ -74,7 +75,7 @@
             </p>
           </div>
         </article>
-        <article class="proyecto">
+        <article class="proyecto wow animate__animated animate__fadeIn">
           <div class="proyecto__imagen">
             <img src="../assets/img/todolist.png" alt="Lista de tareas" />
             <div>
@@ -94,9 +95,9 @@
             </p>
           </div>
         </article>
-        <article class="proyecto reverse">
+        <article class="proyecto reverse wow animate__animated animate__fadeIn">
           <div class="proyecto__imagen">
-            <img src="../assets/img/tateti.png" alt="projecto N" />
+            <img src="../assets/img/tateti.png" alt="TaTeTi" />
             <div>
               <a href="https://leandroagustinfernandez.github.io/Tic-Tac-Toe-Game-TOP/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
@@ -132,5 +133,11 @@
       </div>
     </footer>
     <!-- Fin: Footer Copyright + Redes Sociales -->
+    <!-- Inicio: Script -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- Fin: Script -->
   </body>
 </html>
