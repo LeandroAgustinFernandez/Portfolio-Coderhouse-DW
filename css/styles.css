@@ -6,6 +6,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: unset;
 }
 
 html {
@@ -45,10 +46,6 @@ h3 {
   font-weight: 700;
 }
 
-ul {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -68,6 +65,7 @@ a {
   width: 120px;
   border: 1px solid rgb(18, 150, 211);
   margin: 0.5rem 2rem;
+  opacity: 1;
 }
 
 .tituloPagina {
@@ -103,24 +101,27 @@ footer {
 }
 
 header .logo {
-  width: 100px;
+  width: 130px;
 }
 
-header nav .navlist {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+header nav .not-focus {
+  padding: 0;
+  opacity: .7;
 }
 
-header nav .navlist li a {
+header nav .not-focus:focus {
+  box-shadow: none;
+}
+
+header nav li .nav-link__hover {
   color: rgb(34, 33, 33);
 }
 
-header nav .navlist li a:hover {
+header nav li .nav-link__hover:hover {
   color: rgb(18, 150, 211);
 }
 
-header nav .navlist li .activo {
+header nav li .activo {
   font-weight: 700;
 }
 
@@ -134,10 +135,6 @@ footer .social a img {
 
 /* Inicio: Inicio */
 .inicio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-image: url("../assets/img/BGI-fullcolor.jpg");
   background-position: center;
   background-size: cover;
@@ -165,42 +162,28 @@ footer .social a img {
 }
 
 .sobreMi .sobreMi__fotografia {
-  width: 20%;
+  width: 30%;
 }
 
 .sobreMi .sobreMi__descripcion {
-  width: 76%;
-}
-
-.sobreMi .sobreMi__imagen {
-  width: 100%;
-  border-radius: 50%;
-}
-
-.sobreMi .sobreMi__descripcion {
+  width: 66%;
   min-width: 300px;
   font-size: 1.7rem;
-}
-
-.sobreMi .sobreMi__descripcion p {
-  margin-bottom: 1rem;
 }
 
 /* Fin: Sobre Mi */
 
 /* Inicio: Habilidades */
-.habilidades {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-}
-
 .habilidades .habilidades__card {
   font-family: 'Montserrat', sans-serif;
-  min-width: 250px;
-  margin-top: 1.5rem;
+  width: 250px;
   border: 1px solid rgb(180, 190, 199);
-  padding: 10px 15px;
+  border-radius: 0;
+}
+
+.habilidades .habilidades__card .habilidades__card--header {
+  background-color: white;
+  padding: 1rem 1rem 0;
 }
 
 .habilidades .habilidades__card div {
@@ -208,7 +191,6 @@ footer .social a img {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 10px;
-  margin: 15px 0;
 }
 
 .habilidades .habilidades__card h2 {
@@ -228,18 +210,6 @@ footer .social a img {
 /* Fin: Habilidades */
 
 /* Inicio: Proyectos */
-.proyectos .proyecto {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  margin-top: 3rem;
-}
-
-.proyectos .reverse {
-  flex-direction: row-reverse;
-}
-
 .proyectos .proyecto .proyecto__imagen {
   position: relative;
   overflow: hidden;
@@ -274,19 +244,8 @@ footer .social a img {
 }
 
 .proyectos .proyecto .proyecto__descripcion {
-  display: flex;
-  flex-direction: column;
   flex: 1;
   font-size: 1.5rem;
-}
-
-.proyectos .reverse .proyecto__descripcion {
-  align-items: flex-end;
-  text-align: end;
-}
-
-.proyectos .proyecto .proyecto__descripcion p {
-  flex: 1;
 }
 
 /* Fin: Proyectos */
@@ -294,13 +253,6 @@ footer .social a img {
 /* Inicio: Servicios*/
 .servicios .servicios__titulo {
   font-size: 1.6rem;
-}
-
-.servicios .servicios__tabla {
-  min-width: 100%;
-  margin: 2rem 0;
-  border-collapse: collapse;
-  overflow: hidden;
 }
 
 .servicios .servicios__tabla thead {
@@ -316,31 +268,19 @@ footer .social a img {
 
 .servicios .servicios__tabla th,
 .servicios .servicios__tabla td {
-  border: solid 1px black;
   padding: 5px 10px;
 }
 
 /* Fin: Servicios*/
 
 /* Inicio: Contacto */
-.contacto {
-  display: flex;
-  justify-content: space-between;
-}
-
-.contacto .contacto__article {
-  min-width: 250px;
-  width: 48%;
-  margin-bottom: 3rem;
-}
-
-.contacto .contacto__article iframe {
-  width: 100%;
+#contacto iframe {
+  width: 98%;
   height: 100%;
 }
 
-.contacto .contacto__form input,
-.contacto .contacto__form textarea {
+#contacto .contacto__form input,
+#contacto .contacto__form textarea {
   display: block;
   margin-bottom: 1rem;
   padding: 1rem 0;
@@ -352,10 +292,18 @@ footer .social a img {
   font-family: "Poppins", sans-serif;
 }
 
-.contacto .contacto__form button {
+#contacto .contacto__form .btn--propio {
   width: 100%;
   padding: 15px 0;
+  font-size: 1.3rem;
+  background-color: #94a6b6;
+  border-color: #94a6b6;
   font-family: "Poppins", sans-serif;
+}
+
+#contacto .contacto__form .btn--propio:hover {
+  background-color: #71787e;
+  border-color: #71787e;
 }
 
 /* Fin: Contacto */
@@ -363,7 +311,6 @@ footer .social a img {
 /* ********     INICIO MEDIA QUERY'S    ******** */
 
 /* Inicio: Tamaño <= 1024px */
-
 @media (max-width: 1024px) {
 
   /* Inicio: Reset + General */
@@ -394,12 +341,18 @@ footer .social a img {
   }
 
   /* Fin: Sobre Mi */
+
+  /* Inicio: Contacto */
+  #contacto iframe {
+    width: 100%;
+  }
+
+  /* Fin: Contacto */
 }
 
 /* Fin: Tamaño <= 1024px */
 
 /* Inicio: Tamaño <= 768px */
-
 @media (max-width: 768px) {
 
   /* Inicio: Sobre Mi */
@@ -420,10 +373,6 @@ footer .social a img {
   /* Fin: Sobre Mi */
 
   /* Inicio: Habilidades */
-  .habilidades .habilidades__card {
-    min-width: 180px;
-  }
-
   .habilidades .habilidades__card div {
     display: flex;
     justify-content: center;
@@ -437,28 +386,17 @@ footer .social a img {
 
   /* Inicio: Proyectos */
   .proyectos .proyecto .proyecto__imagen div {
-    display: flex;
-    justify-content: space-around;
+    position: relative;
+    padding: 10px 0;
+    bottom: 0;
   }
 
   /* Fin: Proyectos */
-
-  /* Inicio: Contacto */
-  .contacto {
-    flex-direction: column-reverse;
-  }
-
-  .contacto .contacto__article {
-    width: 100%;
-  }
-
-  /* Fin: Contacto */
 }
 
 /* Fin:  Tamaño <= 768px */
 
 /* Inicio: Tamaño <= 480px */
-
 @media (max-width: 480px) {
 
   /* Inicio: Reset + General */
@@ -473,15 +411,8 @@ footer .social a img {
   /* Fin: Reset + General */
 
   /* Inicio: header + footer*/
-  header,
-  footer,
-  header nav .navlist {
+  footer {
     flex-direction: column;
-  }
-
-  header nav .navlist {
-    text-align: center;
-    padding: 10px 0;
   }
 
   footer .social {
@@ -489,26 +420,6 @@ footer .social a img {
   }
 
   /* Fin: header + footer */
-
-  /* Inicio: Sobre Mi */
-  .sobreMi .sobreMi__imagen {
-    min-width: 100%;
-  }
-
-  /* Fin: Sobre Mi */
-
-  /* Inicio: Habilidades */
-  .habilidades {
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-    justify-items: center;
-  }
-
-  .habilidades .habilidades__card div {
-    min-width: 250px;
-  }
-
-  /* Fin: Habilidades */
 
   /* Inicio: Proyectos */
   .proyectos .proyecto .proyecto__descripcion,
@@ -529,20 +440,6 @@ footer .social a img {
   }
 
   /* Fin: Proyectos */
-
-  /* Inicio: Servicios*/
-  .servicios .servicios__tabla .hidden {
-    display: none;
-  }
-
-  /* Fin: Servicios*/
-
-  /* Inicio: Contacto */
-  .contacto .contacto__article {
-    margin-bottom: 3rem;
-  }
-
-  /* Fin: Contacto */
 }
 
 /* Fin: Tamaño <= 480px */
