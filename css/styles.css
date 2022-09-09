@@ -6,7 +6,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: unset;
 }
 
 html {
@@ -48,10 +47,6 @@ h3 {
 
 a {
   text-decoration: none;
-}
-
-.contenedor {
-  padding: 5rem 15rem;
 }
 
 .titulo {
@@ -128,7 +123,7 @@ header nav li .activo {
 footer .social a img {
   display: inline-block;
   width: 30px;
-  padding: 0 5px;
+  margin: 0 5px;
 }
 
 /* Fin: header + footer */
@@ -139,7 +134,6 @@ footer .social a img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
 }
 
 .inicio .presentacion__title {
@@ -154,72 +148,59 @@ footer .social a img {
 /* Fin: Inicio */
 
 /* Inicio: Sobre Mi */
-.sobreMi {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
-}
-
-.sobreMi .sobreMi__fotografia {
-  width: 30%;
-}
-
-.sobreMi .sobreMi__descripcion {
-  width: 66%;
-  min-width: 300px;
+#sobreMi .sobreMi__descripcion {
   font-size: 1.7rem;
 }
 
 /* Fin: Sobre Mi */
 
 /* Inicio: Habilidades */
-.habilidades .habilidades__card {
+#habilidades .habilidades__card {
   font-family: 'Montserrat', sans-serif;
   width: 250px;
-  border: 1px solid rgb(180, 190, 199);
   border-radius: 0;
 }
 
-.habilidades .habilidades__card .habilidades__card--header {
+#habilidades .habilidades__card .habilidades__card--header {
   background-color: white;
   padding: 1rem 1rem 0;
 }
 
-.habilidades .habilidades__card div {
+#habilidades .habilidades__card div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 10px;
 }
 
-.habilidades .habilidades__card h2 {
+#habilidades .habilidades__card h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.habilidades .habilidades__card div img {
+#habilidades .habilidades__card div img {
   width: 50px;
   justify-self: end;
 }
 
-.habilidades .habilidades__card div p {
+#habilidades .habilidades__card div p {
   font-size: 1.4rem;
+  margin-bottom: 0;
 }
 
 /* Fin: Habilidades */
 
 /* Inicio: Proyectos */
-.proyectos .proyecto .proyecto__imagen {
+#proyectos .proyecto__imagen {
   position: relative;
   overflow: hidden;
 }
 
-.proyectos .proyecto .proyecto__imagen img {
+#proyectos .proyecto__imagen img {
   width: 350px;
 }
 
-.proyectos .proyecto .proyecto__imagen div {
+#proyectos .proyecto__imagen div {
   display: flex;
   justify-content: space-around;
   position: absolute;
@@ -231,19 +212,19 @@ footer .social a img {
   transition: all .8s;
 }
 
-.proyectos .proyecto .proyecto__imagen:hover div {
+#proyectos .proyecto__imagen:hover div {
   bottom: 0;
   height: auto;
   padding: 10px 0;
 }
 
-.proyectos .proyecto .proyecto__imagen div a {
+#proyectos .proyecto__imagen div a {
   font-size: 1.5rem;
   font-weight: 800;
   color: white;
 }
 
-.proyectos .proyecto .proyecto__descripcion {
+#proyectos .proyecto__descripcion {
   flex: 1;
   font-size: 1.5rem;
 }
@@ -251,36 +232,36 @@ footer .social a img {
 /* Fin: Proyectos */
 
 /* Inicio: Servicios*/
-.servicios .servicios__titulo {
-  font-size: 1.6rem;
+#servicios .servicios__titulo {
+  font-size: 1.8rem;
 }
 
-.servicios .servicios__tabla thead {
+#servicios table thead {
   background-color: rgb(18, 150, 211);
   color: rgb(245, 244, 244);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-shadow: 1px 1px black;
 }
 
-.servicios .servicios__tabla tbody {
-  font-size: 1.3rem;
+#servicios table tbody {
+  font-size: 1.5rem;
 }
 
-.servicios .servicios__tabla th,
-.servicios .servicios__tabla td {
+#servicios table th,
+#servicios table td {
   padding: 5px 10px;
 }
 
 /* Fin: Servicios*/
 
 /* Inicio: Contacto */
-#contacto iframe {
+#contacto section article:nth-child(1) iframe {
   width: 98%;
   height: 100%;
 }
 
-#contacto .contacto__form input,
-#contacto .contacto__form textarea {
+#contacto section article:nth-child(2) input,
+#contacto section article:nth-child(2) textarea {
   display: block;
   margin-bottom: 1rem;
   padding: 1rem 0;
@@ -292,7 +273,7 @@ footer .social a img {
   font-family: "Poppins", sans-serif;
 }
 
-#contacto .contacto__form .btn--propio {
+#contacto section article:nth-child(2) .btn--propio {
   width: 100%;
   padding: 15px 0;
   font-size: 1.3rem;
@@ -301,7 +282,7 @@ footer .social a img {
   font-family: "Poppins", sans-serif;
 }
 
-#contacto .contacto__form .btn--propio:hover {
+#contacto section article:nth-child(2) .btn--propio:hover {
   background-color: #71787e;
   border-color: #71787e;
 }
@@ -313,13 +294,6 @@ footer .social a img {
 /* Inicio: Tamaño <= 1024px */
 @media (max-width: 1024px) {
 
-  /* Inicio: Reset + General */
-  .contenedor {
-    padding: 5rem;
-  }
-
-  /* Fin: Reset + General */
-
   /* Inicio: Inicio */
   .inicio .presentacion__title {
     font-size: 4rem;
@@ -330,24 +304,6 @@ footer .social a img {
   }
 
   /* Fin: Inicio */
-
-  /* Inicio: Sobre Mi */
-  .sobreMi .sobreMi__fotografia {
-    width: 40%;
-  }
-
-  .sobreMi .sobreMi__descripcion {
-    width: 56%;
-  }
-
-  /* Fin: Sobre Mi */
-
-  /* Inicio: Contacto */
-  #contacto iframe {
-    width: 100%;
-  }
-
-  /* Fin: Contacto */
 }
 
 /* Fin: Tamaño <= 1024px */
@@ -355,55 +311,41 @@ footer .social a img {
 /* Inicio: Tamaño <= 768px */
 @media (max-width: 768px) {
 
-  /* Inicio: Sobre Mi */
-  .sobreMi .sobreMi__fotografia,
-  .sobreMi .sobreMi__descripcion {
-    min-width: 100%;
-  }
-
-  .sobreMi .sobreMi__fotografia {
-    display: flex;
-    justify-content: center;
-  }
-
-  .sobreMi .sobreMi__imagen {
-    width: 50%;
-  }
-
-  /* Fin: Sobre Mi */
-
   /* Inicio: Habilidades */
-  .habilidades .habilidades__card div {
+  #habilidades .habilidades__card div {
     display: flex;
     justify-content: center;
   }
 
-  .habilidades .habilidades__card div p {
+  #habilidades .habilidades__card div p {
     display: none;
   }
 
   /* Fin: Habilidades */
 
   /* Inicio: Proyectos */
-  .proyectos .proyecto .proyecto__imagen div {
+  #proyectos .proyecto__imagen div {
     position: relative;
     padding: 10px 0;
     bottom: 0;
   }
 
   /* Fin: Proyectos */
+
+  /* Inicio: Contacto */
+  #contacto section article:nth-child(1) iframe {
+    width: 100%;
+  }
+
+  /* Fin: Contacto */
 }
 
 /* Fin:  Tamaño <= 768px */
 
 /* Inicio: Tamaño <= 480px */
-@media (max-width: 480px) {
+@media (max-width: 576px) {
 
   /* Inicio: Reset + General */
-  .contenedor {
-    padding: 3rem;
-  }
-
   .titulo hr {
     display: none;
   }
@@ -422,20 +364,16 @@ footer .social a img {
   /* Fin: header + footer */
 
   /* Inicio: Proyectos */
-  .proyectos .proyecto .proyecto__descripcion,
-  .proyectos .reverse .proyecto__descripcion {
-    align-items: center;
+  #proyectos .proyecto__descripcion {
     text-align: center;
     gap: 10px;
   }
 
-  .proyectos .proyecto .proyecto__imagen,
-  .proyectos .reverse .proyecto__imagen {
+  #proyectos .proyecto__imagen {
     width: 100%;
   }
 
-  .proyectos .proyecto .proyecto__imagen img,
-  .proyectos .reverse .proyecto__imagen img {
+  #proyectos .proyecto__imagen img {
     width: 100%;
   }
 

@@ -66,33 +66,35 @@
     </header>
     <!-- Fin: Logo + Navegacion -->
     <!-- Inicio: Cuerpo de la seccion Contacto -->
-    <main id="contacto" class="contenedor">
-      <div class="titulo">
-        <h1 class="tituloPagina">Contacto</h1>
-        <hr />
+    <main id="contacto">
+      <div class="container py-5">
+        <div class="titulo">
+          <h1 class="tituloPagina">Contacto</h1>
+          <hr />
+        </div>
+        <section class="row g-0 d-flex justify-content-between flex-lg-row flex-md-column-reverse flex-column-reverse">
+          <!-- Inicio: Mapa Ubicacion + Formulario de contacto -->
+          <article class="col-lg-6 col-md-12 col-12 mb-3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.8551469772246!2d-58.419022689336735!3d-34.74215435432561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd6af04a4605%3A0xd163d0630190ca44!2sAuditorio!5e0!3m2!1ses!2sar!4v1659633020075!5m2!1ses!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="contacto__mapa"
+            ></iframe>
+          </article>
+          <article class="col-lg-6 col-md-12 col-12 mb-3">
+            <form action="#" method="post">
+              <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre"/>
+              <input type="email" name="email" id="email" placeholder="Ingresa tu email"/>
+              <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja un mensaje"></textarea>
+              <button class="btn btn-secondary btn--propio">Enviar</button>
+            </form>
+          </article>
+          <!-- Fin: Mapa Ubicacion + Formulario de contacto -->
+        </section>
       </div>
-      <section class="row g-0 d-flex justify-content-between flex-lg-row flex-md-column-reverse flex-column-reverse">
-        <!-- Inicio: Mapa Ubicacion + Formulario de contacto -->
-        <article class="col-lg-6 col-md-12 col-12 mb-3">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.8551469772246!2d-58.419022689336735!3d-34.74215435432561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd6af04a4605%3A0xd163d0630190ca44!2sAuditorio!5e0!3m2!1ses!2sar!4v1659633020075!5m2!1ses!2sar"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            class="contacto__mapa"
-          ></iframe>
-        </article>
-        <article class="col-lg-6 col-md-12 col-12 mb-3">
-          <form action="#" method="post" class="contacto__form">
-            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre"/>
-            <input type="email" name="email" id="email" placeholder="Ingresa tu email"/>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja un mensaje"></textarea>
-            <button class="btn btn-secondary btn--propio">Enviar</button>
-          </form>
-        </article>
-        <!-- Fin: Mapa Ubicacion + Formulario de contacto -->
-      </section>
     </main>
     <!-- Fin: Cuerpo de la seccion Contacto -->
     <!-- Inicio: Footer Copyright + Redes Sociales -->
