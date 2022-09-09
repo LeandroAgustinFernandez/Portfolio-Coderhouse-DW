@@ -1,0 +1,27 @@
+.inicio {
+  background: {
+    image: url("../assets/img/BGI-fullcolor.jpg");
+    position: center;
+    size: cover;
+    repeat: no-repeat;
+  }
+  .presentacion__title {
+    font: {
+      size: 6rem;
+      weight: 900;
+    }
+  }
+  .presentacion__subtitle {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 1024px) {
+  .inicio {
+    .presentacion__title {
+      font-size: 4rem;
+    }
+    .presentacion__subtitle {
+      font-size: 2rem;
+    }
+  }
+}

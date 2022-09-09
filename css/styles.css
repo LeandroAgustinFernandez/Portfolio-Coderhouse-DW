@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 
-/* Inicio: Reset + General */
 * {
   margin: 0px;
   padding: 0px;
@@ -10,43 +9,18 @@
 
 html {
   font-size: 62.5%;
-  color: rgb(54, 53, 53);
+  color: #363535;
 }
 
-body {
-  min-height: 100vh;
-  display: grid;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-}
-
-main {
-  grid-area: main;
-  font-family: "Roboto Slab", serif;
-  background-color: rgb(252, 252, 252);
-}
-
-header {
-  grid-area: header;
-}
-
-footer {
-  grid-area: footer;
+a {
+  text-decoration: none;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-}
-
-a {
-  text-decoration: none;
 }
 
 .titulo {
@@ -58,7 +32,7 @@ a {
   animation-duration: 1s;
   display: inline-block;
   width: 120px;
-  border: 1px solid rgb(18, 150, 211);
+  border: 1px solid #1296d3;
   margin: 0.5rem 2rem;
   opacity: 1;
 }
@@ -67,7 +41,7 @@ a {
   display: inline;
   margin: 15px 0;
   font-size: 2.5rem;
-  color: rgb(18, 150, 211);
+  color: #1296d3;
 }
 
 @keyframes aparecer {
@@ -80,19 +54,43 @@ a {
   }
 }
 
-/* Fin: Reset + General */
+@media (max-width: 576px) {
+  .titulo hr {
+    display: none;
+  }
+}
 
-/* Inicio: header + footer*/
-header,
-footer {
-  background-color: rgb(245, 245, 245);
-  font-family: "Poppins", sans-serif;
-  padding: 20px;
-  font-size: 1.6rem;
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: "header""main""footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+body main {
+  grid-area: main;
+  font-family: "Roboto Slab", serif;
+  background-color: #fcfcfc;
+}
+
+body header {
+  grid-area: header;
+}
+
+body footer {
+  grid-area: footer;
+}
+
+header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  background-color: whitesmoke;
+  padding: 20px;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
 }
 
 header .logo {
@@ -101,7 +99,7 @@ header .logo {
 
 header nav .not-focus {
   padding: 0;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 header nav .not-focus:focus {
@@ -109,15 +107,26 @@ header nav .not-focus:focus {
 }
 
 header nav li .nav-link__hover {
-  color: rgb(34, 33, 33);
+  color: #222121;
 }
 
 header nav li .nav-link__hover:hover {
-  color: rgb(18, 150, 211);
+  color: #1296d3;
 }
 
 header nav li .activo {
   font-weight: 700;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 20px;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
 }
 
 footer .social a img {
@@ -126,9 +135,16 @@ footer .social a img {
   margin: 0 5px;
 }
 
-/* Fin: header + footer */
+@media (max-width: 576px) {
+  footer {
+    flex-direction: column;
+  }
 
-/* Inicio: Inicio */
+  footer .social {
+    margin-top: 2rem;
+  }
+}
+
 .inicio {
   background-image: url("../assets/img/BGI-fullcolor.jpg");
   background-position: center;
@@ -145,18 +161,22 @@ footer .social a img {
   font-size: 4rem;
 }
 
-/* Fin: Inicio */
+@media (max-width: 1024px) {
+  .inicio .presentacion__title {
+    font-size: 4rem;
+  }
 
-/* Inicio: Sobre Mi */
+  .inicio .presentacion__subtitle {
+    font-size: 2rem;
+  }
+}
+
 #sobreMi .sobreMi__descripcion {
   font-size: 1.7rem;
 }
 
-/* Fin: Sobre Mi */
-
-/* Inicio: Habilidades */
 #habilidades .habilidades__card {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 250px;
   border-radius: 0;
 }
@@ -173,11 +193,6 @@ footer .social a img {
   gap: 10px;
 }
 
-#habilidades .habilidades__card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 #habilidades .habilidades__card div img {
   width: 50px;
   justify-self: end;
@@ -188,9 +203,22 @@ footer .social a img {
   margin-bottom: 0;
 }
 
-/* Fin: Habilidades */
+#habilidades .habilidades__card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 
-/* Inicio: Proyectos */
+@media (max-width: 768px) {
+  #habilidades .habilidades__card div {
+    display: flex;
+    justify-content: center;
+  }
+
+  #habilidades .habilidades__card div p {
+    display: none;
+  }
+}
+
 #proyectos .proyecto__imagen {
   position: relative;
   overflow: hidden;
@@ -206,16 +234,10 @@ footer .social a img {
   position: absolute;
   bottom: -100%;
   width: 100%;
-  border-top: solid 1px rgb(112, 112, 114);
-  background-color: rgb(18, 150, 211);
+  border-top: solid 1px #707072;
+  background-color: #1296d3;
   text-align: center;
-  transition: all .8s;
-}
-
-#proyectos .proyecto__imagen:hover div {
-  bottom: 0;
-  height: auto;
-  padding: 10px 0;
+  transition: all 0.8s;
 }
 
 #proyectos .proyecto__imagen div a {
@@ -224,21 +246,47 @@ footer .social a img {
   color: white;
 }
 
+#proyectos .proyecto__imagen:hover div {
+  bottom: 0;
+  height: auto;
+  padding: 10px 0;
+}
+
 #proyectos .proyecto__descripcion {
   flex: 1;
   font-size: 1.5rem;
 }
 
-/* Fin: Proyectos */
+@media (max-width: 768px) {
+  #proyectos .proyecto__imagen div {
+    position: relative;
+    padding: 10px 0;
+    bottom: 0;
+  }
+}
 
-/* Inicio: Servicios*/
+@media (max-width: 576px) {
+  #proyectos .proyecto__descripcion {
+    text-align: center;
+    gap: 10px;
+  }
+
+  #proyectos .proyecto__imagen {
+    width: 100%;
+  }
+
+  #proyectos .proyecto__imagen img {
+    width: 100%;
+  }
+}
+
 #servicios .servicios__titulo {
   font-size: 1.8rem;
 }
 
 #servicios table thead {
-  background-color: rgb(18, 150, 211);
-  color: rgb(245, 244, 244);
+  background-color: #1296d3;
+  color: #f5f4f4;
   font-size: 1.7rem;
   text-shadow: 1px 1px black;
 }
@@ -252,9 +300,6 @@ footer .social a img {
   padding: 5px 10px;
 }
 
-/* Fin: Servicios*/
-
-/* Inicio: Contacto */
 #contacto section article:nth-child(1) iframe {
   width: 98%;
   height: 100%;
@@ -265,20 +310,20 @@ footer .social a img {
   display: block;
   margin-bottom: 1rem;
   padding: 1rem 0;
-  border: none;
   width: 100%;
-  border-bottom: 1px solid rgb(192, 190, 190);
+  border: none;
+  border-bottom: 1px solid #c0bebe;
+  color: #666565;
   font-size: 1.4rem;
-  color: rgb(102, 101, 101);
   font-family: "Poppins", sans-serif;
 }
 
 #contacto section article:nth-child(2) .btn--propio {
   width: 100%;
   padding: 15px 0;
-  font-size: 1.3rem;
   background-color: #94a6b6;
   border-color: #94a6b6;
+  font-size: 1.3rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -287,99 +332,8 @@ footer .social a img {
   border-color: #71787e;
 }
 
-/* Fin: Contacto */
-
-/* ********     INICIO MEDIA QUERY'S    ******** */
-
-/* Inicio: Tamaño <= 1024px */
-@media (max-width: 1024px) {
-
-  /* Inicio: Inicio */
-  .inicio .presentacion__title {
-    font-size: 4rem;
-  }
-
-  .inicio .presentacion__subtitle {
-    font-size: 2rem;
-  }
-
-  /* Fin: Inicio */
-}
-
-/* Fin: Tamaño <= 1024px */
-
-/* Inicio: Tamaño <= 768px */
 @media (max-width: 768px) {
-
-  /* Inicio: Habilidades */
-  #habilidades .habilidades__card div {
-    display: flex;
-    justify-content: center;
-  }
-
-  #habilidades .habilidades__card div p {
-    display: none;
-  }
-
-  /* Fin: Habilidades */
-
-  /* Inicio: Proyectos */
-  #proyectos .proyecto__imagen div {
-    position: relative;
-    padding: 10px 0;
-    bottom: 0;
-  }
-
-  /* Fin: Proyectos */
-
-  /* Inicio: Contacto */
   #contacto section article:nth-child(1) iframe {
     width: 100%;
   }
-
-  /* Fin: Contacto */
 }
-
-/* Fin:  Tamaño <= 768px */
-
-/* Inicio: Tamaño <= 480px */
-@media (max-width: 576px) {
-
-  /* Inicio: Reset + General */
-  .titulo hr {
-    display: none;
-  }
-
-  /* Fin: Reset + General */
-
-  /* Inicio: header + footer*/
-  footer {
-    flex-direction: column;
-  }
-
-  footer .social {
-    margin-top: 2rem;
-  }
-
-  /* Fin: header + footer */
-
-  /* Inicio: Proyectos */
-  #proyectos .proyecto__descripcion {
-    text-align: center;
-    gap: 10px;
-  }
-
-  #proyectos .proyecto__imagen {
-    width: 100%;
-  }
-
-  #proyectos .proyecto__imagen img {
-    width: 100%;
-  }
-
-  /* Fin: Proyectos */
-}
-
-/* Fin: Tamaño <= 480px */
-
-/* ********     FIN MEDIA QUERY'S    ******** */

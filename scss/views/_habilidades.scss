@@ -1,0 +1,43 @@
+#habilidades {
+  .habilidades__card {
+    font-family: $fontUno;
+    width: 250px;
+    border-radius: 0;
+    .habilidades__card--header {
+      background-color: white;
+      padding: 1rem 1rem 0;
+    }
+    div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 10px;
+      img {
+        width: 50px;
+        justify-self: end;
+      }
+      p {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+      }
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #habilidades {
+    .habilidades__card {
+      div {
+        display: flex;
+        justify-content: center;
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}

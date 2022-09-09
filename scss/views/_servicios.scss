@@ -1,0 +1,20 @@
+#servicios {
+  .servicios__titulo {
+    font-size: 1.8rem;
+  }
+  table {
+    thead {
+      background-color: $colorPrimario;
+      color: rgb(245, 244, 244);
+      font-size: 1.7rem;
+      text-shadow: 1px 1px black;
+    }
+    tbody {
+      font-size: 1.5rem;
+    }
+    th,
+    td {
+      padding: 5px 10px;
+    }
+  }
+}

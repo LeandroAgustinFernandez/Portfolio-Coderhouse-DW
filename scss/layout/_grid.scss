@@ -1,0 +1,24 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid: {
+    template-areas: "header" "main" "footer";
+    template-columns: 1fr;
+    template-rows: auto 1fr auto;
+  }
+  main {
+    grid-area: main;
+    font-family: $fontTres;
+    background-color: rgb(252, 252, 252);
+  }
+  
+  header {
+    grid-area: header;
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+}
+
+

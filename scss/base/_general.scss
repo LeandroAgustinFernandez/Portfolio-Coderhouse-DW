@@ -1,0 +1,39 @@
+.titulo {
+  margin-bottom: 5rem;
+  hr {
+    animation: {
+      name: aparecer;
+      duration: 1s;
+    }
+    display: inline-block;
+    width: 120px;
+    border: 1px solid $colorPrimario;
+    margin: 0.5rem 2rem;
+    opacity: 1;
+  }
+}
+
+.tituloPagina {
+  display: inline;
+  margin: 15px 0;
+  font-size: 2.5rem;
+  color: $colorPrimario;
+}
+
+@keyframes aparecer {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .titulo {
+    hr {
+      display: none;
+    }
+  }
+}

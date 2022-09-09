@@ -1,0 +1,26 @@
+header {
+  @include headerfooter();
+  .logo {
+    width: 130px;
+  }
+  nav {
+    .not-focus {
+      padding: 0;
+      opacity: 0.7;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    li {
+      .nav-link__hover {
+        color: rgb(34, 33, 33);
+        &:hover {
+          color: rgb(18, 150, 211);
+        }
+      }
+      .activo {
+        font-weight: 700;
+      }
+    }
+  }
+}
