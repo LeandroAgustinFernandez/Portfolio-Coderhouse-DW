@@ -1,151 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon"/>
-    <!-- Estilos externos -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../css/hamburgers.css" />
-    <link rel="stylesheet" href="../css/animate.css" />
-    <!-- Estilos propios -->
-    <link rel="stylesheet" href="../css/styles.css" />
-    <title>Leandro Fernandez | Contacto</title>
-  </head>
-  <body>
-    <!-- Inicio: Logo + Navegacion -->
-    <header>
-      <nav class="navbar navbar-expand-md w-100">
-        <div class="container-fluid">
-          <a href="../index.html" class="navbar-brand">
-            <img src="../assets/img/logo.png" alt="Logo" class="logo" />
-          </a>
-          <button
-            class="hamburger hamburger--squeeze navbar-toggler not-focus"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-              <li class="nav-item mx-auto">
-                <a href="../index.html" class="nav-link nav-link__hover">Inicio</a>
-              </li>
-              <li class="nav-item mx-auto">
-                <a href="./sobre-mi.html" class="nav-link nav-link__hover">Sobre Mi</a>
-              </li>
-              <li class="nav-item mx-auto">
-                <a href="./habilidades.html" class="nav-link nav-link__hover">Habilidades</a>
-              </li>
-              <li class="nav-item mx-auto">
-                <a href="./proyectos.html" class="nav-link nav-link__hover">Proyectos</a>
-              </li>
-              <li class="nav-item mx-auto">
-                <a href="./servicios.html" class="nav-link nav-link__hover">Servicios</a>
-              </li>
-              <li class="nav-item mx-auto">
-                <a href="./contacto.html" class="nav-link nav-link__hover activo">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- Fin: Logo + Navegacion -->
-    <!-- Inicio: Cuerpo de la seccion Contacto -->
-    <main id="contacto">
-      <div class="container py-5">
-        <div class="titulo">
-          <h1 class="tituloPagina">Contacto</h1>
-          <hr />
-        </div>
-        <section class="row g-0 d-flex justify-content-between flex-lg-row flex-md-column-reverse flex-column-reverse">
-          <!-- Inicio: Mapa Ubicacion + Formulario de contacto -->
-          <article class="col-lg-6 col-md-12 col-12 mb-3">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.8551469772246!2d-58.419022689336735!3d-34.74215435432561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd6af04a4605%3A0xd163d0630190ca44!2sAuditorio!5e0!3m2!1ses!2sar!4v1659633020075!5m2!1ses!2sar"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              class="contacto__mapa"
-            ></iframe>
-          </article>
-          <article class="col-lg-6 col-md-12 col-12 mb-3">
-            <form action="#" method="post">
-              <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre"/>
-              <input type="email" name="email" id="email" placeholder="Ingresa tu email"/>
-              <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja un mensaje"></textarea>
-              <button class="btn btn-secondary btn--propio">Enviar</button>
-            </form>
-          </article>
-          <!-- Fin: Mapa Ubicacion + Formulario de contacto -->
-        </section>
-      </div>
-    </main>
-    <!-- Fin: Cuerpo de la seccion Contacto -->
-    <!-- Inicio: Footer Copyright + Redes Sociales -->
-    <footer>
-      <div class="copyright">
-        <p>&copy; Leandro Fernandez 2022</p>
-      </div>
-      <div class="social">
-        <a href="#">
-          <img src="../assets/img/facebook.png" alt="facebook" />
-        </a>
-        <a href="#">
-          <img src="../assets/img/instagram.png" alt="instagram" />
-        </a>
-        <a href="#">
-          <img src="../assets/img/gorjeo.png" alt="twitter" />
-        </a>
-      </div>
-    </footer>
-    <!-- Fin: Footer Copyright + Redes Sociales -->
-    <!-- Inicio: Script -->
-    <script src="../js/wow.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      // Wow animations
-      new WOW().init();
-      // Hamburguers
-      var forEach = function (t, o, r) {
-        if ("[object Object]" === Object.prototype.toString.call(t))
-          for (var c in t)
-            Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
-        else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t);
-      };
 
-      var hamburgers = document.querySelectorAll(".hamburger");
-      if (hamburgers.length > 0) {
-        forEach(hamburgers, function (hamburger) {
-          hamburger.addEventListener(
-            "click",
-            function () {
-              this.classList.toggle("is-active");
-            },
-            false
-          );
-        });
-      }
-    </script>
-    <!-- Fin: Script -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+  <!-- Estilos externos -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/hamburgers.css" />
+  <link rel="stylesheet" href="../css/animate.css" />
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <title>Leandro Fernandez | Contacto</title>
+</head>
+
+<body>
+  <!-- Inicio: Logo + Navegacion -->
+  <header>
+    <nav class="navbar navbar-expand-md w-100">
+      <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand">
+          <img src="../assets/img/logo.png" alt="Logo" class="logo" />
+        </a>
+        <button 
+          class="hamburger hamburger--squeeze navbar-toggler not-focus" 
+          type="button" 
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item mx-auto">
+              <a href="../index.html" class="nav-link nav-link__hover">Inicio</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a href="./sobre-mi.html" class="nav-link nav-link__hover">Sobre Mi</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a href="./habilidades.html" class="nav-link nav-link__hover">Habilidades</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a href="./proyectos.html" class="nav-link nav-link__hover">Proyectos</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a href="./servicios.html" class="nav-link nav-link__hover">Servicios</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a href="./contacto.html" class="nav-link nav-link__hover activo">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Fin: Logo + Navegacion -->
+  <!-- Inicio: Cuerpo de la seccion Contacto -->
+  <main id="contacto">
+    <div class="container py-5">
+      <div class="titulo">
+        <h1 class="tituloPagina">Contacto</h1>
+        <hr />
+      </div>
+      <section class="row g-0 d-flex justify-content-between flex-lg-row flex-md-column-reverse flex-column-reverse">
+        <!-- Inicio: Mapa Ubicacion + Formulario de contacto -->
+        <article class="col-lg-6 col-md-12 col-12 mb-3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.8551469772246!2d-58.419022689336735!3d-34.74215435432561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd6af04a4605%3A0xd163d0630190ca44!2sAuditorio!5e0!3m2!1ses!2sar!4v1659633020075!5m2!1ses!2sar"
+            style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            class="contacto__mapa"></iframe>
+        </article>
+        <article class="col-lg-6 col-md-12 col-12 mb-3">
+          <form action="#" method="post">
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" />
+            <input type="email" name="email" id="email" placeholder="Ingresa tu email" />
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja un mensaje"></textarea>
+            <button class="btn btn-secondary btn--propio">Enviar</button>
+          </form>
+        </article>
+        <!-- Fin: Mapa Ubicacion + Formulario de contacto -->
+      </section>
+    </div>
+  </main>
+  <!-- Fin: Cuerpo de la seccion Contacto -->
+  <!-- Inicio: Footer Copyright + Redes Sociales -->
+  <footer>
+    <div class="copyright">
+      <p>&copy; Leandro Fernandez 2022</p>
+    </div>
+    <div class="social">
+      <a href="#">
+        <img src="../assets/img/facebook.png" alt="facebook" />
+      </a>
+      <a href="#">
+        <img src="../assets/img/instagram.png" alt="instagram" />
+      </a>
+      <a href="#">
+        <img src="../assets/img/gorjeo.png" alt="twitter" />
+      </a>
+    </div>
+  </footer>
+  <!-- Fin: Footer Copyright + Redes Sociales -->
+  <!-- Inicio: Script -->
+  <script src="../js/wow.min.js"></script>
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous">
+  </script>
+  <script src="../js/hamburgers.js"></script>
+  <script>
+    // Wow animations
+    new WOW().init();
+  </script>
+  <!-- Fin: Script -->
+</body>
+
 </html>

@@ -1,222 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../assets/favicon.ico"
-      type="image/x-icon"
-    />
-    <!-- Estilos externos -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../css/hamburgers.css" />
-    <link rel="stylesheet" href="../css/animate.css" />
-    <!-- Estilos propios -->
-    <link rel="stylesheet" href="../css/styles.css" />
-    <title>Leandro Fernandez | Habilidades</title>
-  </head>
-  <body>
-    <!-- Inicio: Logo + Navegacion -->
-    <header>
-      <nav class="navbar navbar-expand-md w-100">
-        <div class="container-fluid">
-          <a href="../index.html" class="navbar-brand">
-            <img src="../assets/img/logo.png" alt="Logo" class="logo" />
-          </a>
-          <button
-            class="hamburger hamburger--squeeze navbar-toggler not-focus"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-              <li class="nav-item mx-auto">
-                <a href="../index.html" class="nav-link nav-link__hover"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item mx-auto">
-                <a href="./sobre-mi.html" class="nav-link nav-link__hover"
-                  >Sobre Mi</a
-                >
-              </li>
-              <li class="nav-item mx-auto">
-                <a
-                  href="./habilidades.html"
-                  class="nav-link nav-link__hover activo"
-                  >Habilidades</a
-                >
-              </li>
-              <li class="nav-item mx-auto">
-                <a href="./proyectos.html" class="nav-link nav-link__hover"
-                  >Proyectos</a
-                >
-              </li>
-              <li class="nav-item mx-auto">
-                <a href="./servicios.html" class="nav-link nav-link__hover"
-                  >Servicios</a
-                >
-              </li>
-              <li class="nav-item mx-auto">
-                <a href="./contacto.html" class="nav-link nav-link__hover"
-                  >Contacto</a
-                >
-              </li>
-            </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+  <!-- Estilos externos -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/hamburgers.css" />
+  <link rel="stylesheet" href="../css/animate.css" />
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <title>Leandro Fernandez | Habilidades</title>
+</head>
+
+<body>
+  <!-- Inicio: Logo + Navegacion -->
+  <header>
+    <nav class="navbar navbar-expand-md w-100">
+      <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand">
+          <img src="../assets/img/logo.png" alt="Logo" class="logo" />
+        </a>
+        <button 
+          class="hamburger hamburger--squeeze navbar-toggler not-focus" 
+          type="button" 
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item mx-auto">
+              <a href="../index.html" class="nav-link nav-link__hover">Inicio</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a href="./sobre-mi.html" class="nav-link nav-link__hover">Sobre Mi</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a href="./habilidades.html" class="nav-link nav-link__hover activo">Habilidades</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a href="./proyectos.html" class="nav-link nav-link__hover">Proyectos</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a href="./servicios.html" class="nav-link nav-link__hover">Servicios</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a href="./contacto.html" class="nav-link nav-link__hover">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Fin: Logo + Navegacion -->
+  <!-- Inicio: Cuerpo de la seccion Habilidades -->
+  <main id="habilidades">
+    <section class="container py-5">
+      <div class="titulo">
+        <h1 class="tituloPagina">Mis Habilidades</h1>
+        <hr />
+      </div>
+      <article class="row g-0">
+        <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center mb-lg-0 mb-md-4 mb-sm-4 mb-4">
+          <div class="card habilidades__card animate__animated animate__zoomIn">
+            <div class="card-header habilidades__card--header">
+              <h2 class="card-title">FrontEnd</h2>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div>
+                <img src="../assets/img/html.png" alt="HTML" />
+                <p class="card-text">HTML</p>
+              </div>
+              <div>
+                <img src="../assets/img/css-3.png" alt="CSS" />
+                <p class="card-text">CSS</p>
+              </div>
+              <div>
+                <img src="../assets/img/js.png" alt="JS" />
+                <p class="card-text">JS</p>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- Fin: Logo + Navegacion -->
-    <!-- Inicio: Cuerpo de la seccion Habilidades -->
-    <main id="habilidades">
-      <div class="container py-5">
-        <div class="titulo">
-          <h1 class="tituloPagina">Mis Habilidades</h1>
-          <hr />
+        <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center mb-lg-0 mb-md-4 mb-sm-4 mb-4">
+          <div class="card habilidades__card animate__animated animate__zoomIn animate__delay-1s">
+            <div class="card-header habilidades__card--header">
+              <h2 class="card-title">BackEnd</h2>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div>
+                <img src="../assets/img/php.png" alt="PHP" />
+                <p class="card-text">PHP</p>
+              </div>
+              <div>
+                <img src="../assets/img/servidor-sql.png" alt="SQL" />
+                <p class="card-text">SQL</p>
+              </div>
+              <div>
+                <img src="../assets/img/nodo-js.png" alt="NODE" />
+                <p class="card-text">NODE</p>
+              </div>
+              <div>
+                <img src="../assets/img/python.png" alt="PYTHON" />
+                <p class="card-text">PYTHON</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <section class="row g-0">
-          <article
-            class="col-lg-4 col-md-12 col-sm-12 animate__animated animate__zoomIn d-flex justify-content-center mb-lg-0 mb-md-4 mb-sm-4 mb-4"
-          >
-            <div class="card habilidades__card">
-              <div class="card-header habilidades__card--header">
-                <h2 class="card-title" >FrontEnd</h2>
+        <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center mb-lg-0 mb-md-4 mb-sm-4 mb-4">
+          <div class="card habilidades__card animate__animated animate__zoomIn animate__delay-2s ">
+            <div class="card-header habilidades__card--header">
+              <h2 class="card-title">Tecnologías</h2>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div>
+                <img src="../assets/img/git.png" alt="GIT" />
+                <p class="card-text">GIT</p>
               </div>
-              <div class="card-body d-flex flex-column">
-                <div>
-                  <img src="../assets/img/html.png" alt="HTML" />
-                  <p class="card-text">HTML</p>
-                </div>
-                <div>
-                  <img src="../assets/img/css-3.png" alt="CSS" />
-                  <p class="card-text">CSS</p>
-                </div>
-                <div>
-                  <img src="../assets/img/js.png" alt="JS" />
-                  <p class="card-text">JS</p>
-                </div>
+              <div>
+                <img src="../assets/img/webpack.png" alt="WEBPACK" />
+                <p class="card-text">WEBPACK</p>
+              </div>
+              <div>
+                <img src="../assets/img/npm.png" alt="NPM" />
+                <p class="card-text">NPM</p>
               </div>
             </div>
-          </article>
-          <article
-            class="col-lg-4 col-md-12 col-sm-12 animate__animated animate__zoomIn animate__delay-1s d-flex justify-content-center mb-lg-0 mb-md-4 mb-sm-4 mb-4"
-          >
-            <div class="card habilidades__card">
-              <div class="card-header habilidades__card--header">
-                <h2 class="card-title">BackEnd</h2>
-              </div>
-              <div class="card-body d-flex flex-column">
-                <div>
-                  <img src="../assets/img/php.png" alt="PHP" />
-                  <p class="card-text">PHP</p>
-                </div>
-                <div>
-                  <img src="../assets/img/servidor-sql.png" alt="SQL" />
-                  <p class="card-text">SQL</p>
-                </div>
-                <div>
-                  <img src="../assets/img/nodo-js.png" alt="NODE" />
-                  <p class="card-text">NODE</p>
-                </div>
-                <div>
-                  <img src="../assets/img/python.png" alt="PYTHON" />
-                  <p class="card-text">PYTHON</p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article
-            class="col-lg-4 col-md-12 col-sm-12 animate__animated animate__zoomIn animate__delay-2s d-flex justify-content-center mb-lg-0 mb-md-4 mb-sm-4 mb-4"
-          >
-            <div class="card habilidades__card">
-              <div class="card-header habilidades__card--header">
-                <h2 class="card-title">Tecnologías</h2>
-              </div>
-              <div class="card-body d-flex flex-column">
-                <div>
-                  <img src="../assets/img/git.png" alt="GIT" />
-                  <p class="card-text">GIT</p>
-                </div>
-                <div>
-                  <img src="../assets/img/webpack.png" alt="WEBPACK" />
-                  <p class="card-text">WEBPACK</p>
-                </div>
-                <div>
-                  <img src="../assets/img/npm.png" alt="NPM" />
-                  <p class="card-text">NPM</p>
-                </div>
-              </div>
-            </div>
-          </article>
-        </section>
-      </div>
-    </main>
-    <!-- Fin: Cuerpo de la seccion Habilidades -->
-    <!-- Inicio: Footer Copyright + Redes Sociales -->
-    <footer>
-      <div class="copyright">
-        <p>&copy; Leandro Fernandez 2022</p>
-      </div>
-      <div class="social">
-        <a href="#">
-          <img src="../assets/img/facebook.png" alt="facebook" />
-        </a>
-        <a href="#">
-          <img src="../assets/img/instagram.png" alt="instagram" />
-        </a>
-        <a href="#">
-          <img src="../assets/img/gorjeo.png" alt="twitter" />
-        </a>
-      </div>
-    </footer>
-    <!-- Fin: Footer Copyright + Redes Sociales -->
-    <!-- Inicio: Script -->
-    <script src="../js/wow.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      // Wow animations
-      new WOW().init();
-      // Hamburguers
-      var forEach = function (t, o, r) {
-        if ("[object Object]" === Object.prototype.toString.call(t))
-          for (var c in t)
-            Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
-        else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t);
-      };
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <!-- Fin: Cuerpo de la seccion Habilidades -->
+  <!-- Inicio: Footer Copyright + Redes Sociales -->
+  <footer>
+    <div class="copyright">
+      <p>&copy; Leandro Fernandez 2022</p>
+    </div>
+    <div class="social">
+      <a href="#">
+        <img src="../assets/img/facebook.png" alt="facebook" />
+      </a>
+      <a href="#">
+        <img src="../assets/img/instagram.png" alt="instagram" />
+      </a>
+      <a href="#">
+        <img src="../assets/img/gorjeo.png" alt="twitter" />
+      </a>
+    </div>
+  </footer>
+  <!-- Fin: Footer Copyright + Redes Sociales -->
+  <!-- Inicio: Script -->
+  <script src="../js/wow.min.js"></script>
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous">
+  </script>
+  <script src="../js/hamburgers.js"></script>
+  <script>
+    // Wow animations
+    new WOW().init();
+  </script>
+  <!-- Fin: Script -->
+</body>
 
-      var hamburgers = document.querySelectorAll(".hamburger");
-      if (hamburgers.length > 0) {
-        forEach(hamburgers, function (hamburger) {
-          hamburger.addEventListener(
-            "click",
-            function () {
-              this.classList.toggle("is-active");
-            },
-            false
-          );
-        });
-      }
-    </script>
-    <!-- Fin: Script -->
-  </body>
 </html>
