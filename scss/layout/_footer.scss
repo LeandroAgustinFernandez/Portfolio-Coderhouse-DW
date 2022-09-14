@@ -9,9 +9,7 @@ footer {
       }
     }
   }
-}
-@media (max-width: 576px) {
-  footer {
+  @media (max-width: 576px) {
     flex-direction: column;
     .social {
       margin-top: 2rem;

@@ -15,7 +15,7 @@ header {
       .nav-link__hover {
         color: rgb(34, 33, 33);
         &:hover {
-          color: rgb(18, 150, 211);
+          color: $colorPrimario;
         }
       }
       .activo {
