@@ -1,5 +1,14 @@
 header {
-  @include headerfooter();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+  font: {
+    size: 1.6rem;
+    family: $fontDos;
+  }
   .logo {
     width: 130px;
   }
