@@ -10,17 +10,13 @@
       size: 6rem;
       weight: 900;
     }
+    @media #{$desktop} {
+      font-size: 4rem;
+    }
   }
   .presentacion__subtitle {
     font-size: 4rem;
-  }
-}
-@media (max-width: 1024px) {
-  .inicio {
-    .presentacion__title {
-      font-size: 4rem;
-    }
-    .presentacion__subtitle {
+    @media #{$desktop} {
       font-size: 2rem;
     }
   }

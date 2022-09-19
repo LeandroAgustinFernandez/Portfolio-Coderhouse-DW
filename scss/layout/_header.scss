@@ -1,14 +1,5 @@
 header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(245, 245, 245);
-  padding: 20px;
-  font: {
-    size: 1.6rem;
-    family: $fontDos;
-  }
+  @extend %headerfooter;
   .logo {
     width: 130px;
   }
@@ -24,7 +15,7 @@ header {
       .nav-link__hover {
         color: rgb(34, 33, 33);
         &:hover {
-          color: $colorPrimario;
+          color: map-get($map: $colores, $key: primero);;
         }
       }
       .activo {

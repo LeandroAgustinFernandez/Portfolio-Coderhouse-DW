@@ -7,9 +7,12 @@
     }
     display: inline-block;
     width: 120px;
-    border: 1px solid $colorPrimario;
+    border: 1px solid map-get($map: $colores, $key: primero);
     margin: 0.5rem 2rem;
     opacity: 1;
+    @media #{$mobile} {
+      display: none;
+    }
   }
 }
 
@@ -17,7 +20,7 @@
   display: inline;
   margin: 15px 0;
   font-size: 2.5rem;
-  color: $colorPrimario;
+  color: map-get($map: $colores, $key: primero);
 }
 
 @keyframes aparecer {
@@ -27,13 +30,5 @@
 
   100% {
     width: 120px;
-  }
-}
-
-@media (max-width: 576px) {
-  .titulo {
-    hr {
-      display: none;
-    }
   }
 }

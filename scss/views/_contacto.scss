@@ -5,6 +5,9 @@
         iframe {
           width: 98%;
           height: 100%;
+          @media #{$tablet} {
+            width: 100%;
+          }
         }
       }
       &:nth-child(2) {
@@ -34,20 +37,6 @@
           &:hover {
             background-color: #71787e;
             border-color: #71787e;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  #contacto {
-    section {
-      article {
-        &:nth-child(1) {
-          iframe {
-            width: 100%;
           }
         }
       }

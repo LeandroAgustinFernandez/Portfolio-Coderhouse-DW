@@ -1,14 +1,5 @@
 footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(245, 245, 245);
-  padding: 20px;
-  font: {
-    size: 1.6rem;
-    family: $fontDos;
-  }
+  @extend %headerfooter;
   .social {
     a {
       img {
@@ -18,7 +9,7 @@ footer {
       }
     }
   }
-  @media (max-width: 576px) {
+  @media #{$mobile} {
     flex-direction: column;
     .social {
       margin-top: 2rem;

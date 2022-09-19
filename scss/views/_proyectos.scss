@@ -4,15 +4,17 @@
     overflow: hidden;
     img {
       width: 350px;
+      @media #{$mobile} {
+        width: 100%;
+      }
     }
     div {
-      display: flex;
-      justify-content: space-around;
+      @include flexdisplay(row, space-around, flex-start);
       position: absolute;
       bottom: -100%;
       width: 100%;
       border-top: solid 1px rgb(112, 112, 114);
-      background-color: $colorPrimario;
+      background-color: map-get($map: $colores, $key: primero);;
       text-align: center;
       transition: all 0.8s;
       a {
@@ -22,6 +24,11 @@
         }
         color: white;
       }
+      @media #{$tablet} {
+        position: relative;
+        padding: 10px 0;
+        bottom: 0;
+      }
     }
     &:hover {
       div {
@@ -30,36 +37,19 @@
         padding: 10px 0;
       }
     }
-  }
-  .proyecto__descripcion {
-    flex: 1;
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #proyectos {
-    .proyecto__imagen {
-      div {
-        position: relative;
-        padding: 10px 0;
-        bottom: 0;
-      }
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  #proyectos {
-    .proyecto__descripcion {
-      text-align: center;
-      gap: 10px;
-    }
-    .proyecto__imagen {
+    @media #{$mobile} {
       width: 100%;
       img {
         width: 100%;
       }
+    }
+  }
+  .proyecto__descripcion {
+    flex: 1;
+    font-size: 1.5rem;
+    @media #{$mobile} {
+      text-align: center;
+      gap: 10px;
     }
   }
 }

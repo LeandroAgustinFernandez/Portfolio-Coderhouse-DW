@@ -19,25 +19,17 @@
       p {
         font-size: 1.4rem;
         margin-bottom: 0;
+        @media #{$tablet} {
+          display: none;
+        }
+      }
+      @media #{$tablet} {
+        @include flexdisplay(row, start, center);
       }
     }
     h2 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  #habilidades {
-    .habilidades__card {
-      div {
-        display: flex;
-        justify-content: center;
-        p {
-          display: none;
-        }
-      }
     }
   }
 }
