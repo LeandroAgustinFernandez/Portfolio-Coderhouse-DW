@@ -1,3 +1,4 @@
+// Inicio: Reseteo
 * {
   margin: 0px;
   padding: 0px;
@@ -12,8 +13,13 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
+h1 {
+  @extend %cabeceras;
+}
+h2 {
+  @extend %cabeceras;
+}
 h3 {
   @extend %cabeceras;
 }
+// Fin: Reseteo
