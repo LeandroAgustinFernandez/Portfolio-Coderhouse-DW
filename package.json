@@ -1,7 +1,7 @@
 {
   "name": "portfolio---leandro-fernandez---e03",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portfolio personal creado para el curso de Desarrollo Web.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
