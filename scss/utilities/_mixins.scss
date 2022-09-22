@@ -1,0 +1,7 @@
+// Mixin para utilizar Flex junto con algunas de sus propiedades
+@mixin flexdisplay($direccion,$justify,$align) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $align;
+}

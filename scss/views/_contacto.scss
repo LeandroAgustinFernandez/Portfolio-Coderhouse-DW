@@ -1,0 +1,47 @@
+// Inicio: Seccion Contacto
+#contacto {
+  section {
+    article {
+      &:nth-child(1) {
+        iframe {
+          width: 98%;
+          height: 100%;
+          @media #{$tablet} {
+            width: 100%;
+          }
+        }
+      }
+      &:nth-child(2) {
+        input,
+        textarea {
+          display: block;
+          margin-bottom: 1rem;
+          padding: 1rem 0;
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid rgb(192, 190, 190);
+          color: rgb(102, 101, 101);
+          font: {
+            size: 1.4rem;
+            family: $fontDos;
+          }
+        }
+        .btn--propio {
+          width: 100%;
+          padding: 15px 0;
+          background-color: #94a6b6;
+          border-color: #94a6b6;
+          font: {
+            size: 1.3rem;
+            family: $fontDos;
+          }
+          &:hover {
+            background-color: #71787e;
+            border-color: #71787e;
+          }
+        }
+      }
+    }
+  }
+}
+// Fin: Seccion Contacto

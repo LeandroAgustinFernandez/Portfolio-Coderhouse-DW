@@ -1,3 +1,4 @@
+// Hamburguers
 var forEach = function (t, o, r) {
   if ("[object Object]" === Object.prototype.toString.call(t))
     for (var c in t)

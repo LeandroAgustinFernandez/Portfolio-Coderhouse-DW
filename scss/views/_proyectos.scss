@@ -1,0 +1,57 @@
+// Inicio: Seccion Proyecto
+#proyectos {
+  .proyecto__imagen {
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 350px;
+      @media #{$mobile} {
+        width: 100%;
+      }
+    }
+    div {
+      @include flexdisplay(row, space-around, flex-start);
+      position: absolute;
+      bottom: -100%;
+      width: 100%;
+      border-top: solid 1px rgb(112, 112, 114);
+      background-color: map-get($map: $colores, $key: primero);;
+      text-align: center;
+      transition: all 0.8s;
+      a {
+        font: {
+          size: 1.5rem;
+          weight: 800;
+        }
+        color: white;
+      }
+      @media #{$tablet} {
+        position: relative;
+        padding: 10px 0;
+        bottom: 0;
+      }
+    }
+    &:hover {
+      div {
+        bottom: 0;
+        height: auto;
+        padding: 10px 0;
+      }
+    }
+    @media #{$mobile} {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .proyecto__descripcion {
+    flex: 1;
+    font-size: 1.5rem;
+    @media #{$mobile} {
+      text-align: center;
+      gap: 10px;
+    }
+  }
+}
+// Fin: Seccion Proyecto

@@ -1,0 +1,19 @@
+// Inicio: Footer
+footer {
+  @extend %headerfooter;
+  .social {
+    a {
+      img {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+  @media #{$mobile} {
+    flex-direction: column;
+    .social {
+      margin-top: 2rem;
+    }
+  }
+}
+// Fin: Footer

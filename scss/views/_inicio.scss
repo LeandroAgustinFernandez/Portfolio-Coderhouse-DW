@@ -1,0 +1,25 @@
+// Inicio: Seccion Inicio
+.inicio {
+  background: {
+    image: url("../assets/img/BGI-fullcolor.jpg");
+    position: center;
+    size: cover;
+    repeat: no-repeat;
+  }
+  .presentacion__title {
+    font: {
+      size: 6rem;
+      weight: 900;
+    }
+    @media #{$desktop} {
+      font-size: 4rem;
+    }
+  }
+  .presentacion__subtitle {
+    font-size: 4rem;
+    @media #{$desktop} {
+      font-size: 2rem;
+    }
+  }
+}
+// Fin: Seccion Inicio

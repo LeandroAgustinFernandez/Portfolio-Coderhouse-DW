@@ -1,0 +1,19 @@
+// Extends
+%headerfooter{
+    @include flexdisplay(row,space-between,center);
+    flex-wrap: wrap;
+    background-color: map-get($map: $colores, $key: segundo);
+    padding: 20px;
+    font: {
+      size: 1.6rem;
+      family: $fontDos;
+    }
+}
+
+%cabeceras{
+  font: {
+    family: $fontUno;
+    weight: 700;
+  }
+}
+
