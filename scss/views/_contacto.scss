@@ -32,12 +32,18 @@
           background-color: #94a6b6;
           border-color: #94a6b6;
           font: {
-            size: 1.3rem;
+            size: 1.8rem;
             family: $fontDos;
           }
           &:hover {
             background-color: #71787e;
             border-color: #71787e;
+          }
+          @media #{$tablet} {
+            padding: 12px 0;
+            font: {
+              size: 1.5rem;
+            }
           }
         }
       }

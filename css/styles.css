@@ -232,8 +232,12 @@ footer .social a img {
   padding: 15px 0;
   background-color: #94a6b6;
   border-color: #94a6b6;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-family: "Poppins", sans-serif; }
   #contacto section article:nth-child(2) .btn--propio:hover {
     background-color: #71787e;
     border-color: #71787e; }
+  @media (max-width: 768px) {
+    #contacto section article:nth-child(2) .btn--propio {
+      padding: 12px 0;
+      font-size: 1.5rem; } }
