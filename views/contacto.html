@@ -78,13 +78,14 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               class="contacto__mapa"
+              title="mapa ubicación"
             ></iframe>
           </article>
           <article class="col-lg-6 col-md-12 col-12 mb-3">
             <form action="#" method="post">
-              <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre"/>
-              <input type="email" name="email" id="email" placeholder="Ingresa tu email"/>
-              <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja un mensaje"></textarea>
+              <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required minlength="3"/>
+              <input type="email" name="email" id="email" placeholder="Ingresa tu email" required/>
+              <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja un mensaje" required minlength="15"></textarea>
               <button class="btn btn-secondary btn--propio">Enviar</button>
             </form>
           </article>

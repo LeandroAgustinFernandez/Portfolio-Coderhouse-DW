@@ -29,15 +29,15 @@
         .btn--propio {
           width: 100%;
           padding: 15px 0;
-          background-color: #94a6b6;
-          border-color: #94a6b6;
+          background-color: #213444;
+          border-color: #213444;
           font: {
             size: 1.8rem;
             family: $fontDos;
           }
           &:hover {
-            background-color: #71787e;
-            border-color: #71787e;
+            background-color: #4c5a66;
+            border-color: #4c5a66;
           }
           @media #{$tablet} {
             padding: 12px 0;
